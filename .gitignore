@@ -3,6 +3,6 @@
 *.pyc
 tornado/uploads/*
 tornado/static/tmp/*
-
+tornado/models/
 
 !.gitkeep

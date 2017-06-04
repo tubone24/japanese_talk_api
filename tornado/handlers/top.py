@@ -42,7 +42,7 @@ class TopHandler(BaseHandler):
             args.length = 500
             output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
 
-            output = output[len(query):].lstrip("?\n").lstrip("？\n").lstrip("??\n").lstrip("？？\n").lstrip().split("\n\n")[0]
+            output = output[:output.index('\n\n')]
 
             res["output"] = output
 

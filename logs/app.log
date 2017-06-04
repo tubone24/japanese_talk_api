@@ -1,0 +1,393 @@
+2017-06-04 10:09:52,571 INFO [('/', <class 'top.TopHandler'>)]
+2017-06-04 10:09:52,571 INFO {'debug': True, 'template_loader': <tornado.template.Loader object at 0x290d450>, 'cookie_secret': 'your-cookie-secret', 'xsrf_cookies': True, 'static_path': '/home/tubone/chainer/japanese_talk_api/tornado/static'}
+2017-06-04 10:10:43,714 ERROR Uncaught exception GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF', version='HTTP/1.1', remote_ip='192.168.0.5', headers={'Accept-Language': 'ja', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.0.84:8787', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 31, in prediction
+    n_units = model.embed.W.shape[1]
+AttributeError: 'Variable' object has no attribute 'shape'
+2017-06-04 10:10:43,715 ERROR 500 GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5) 3.80ms
+2017-06-04 10:10:43,881 WARNING 404 GET /favicon.ico (192.168.0.5) 0.95ms
+2017-06-04 10:20:44,036 INFO [('/', <class 'top.TopHandler'>)]
+2017-06-04 10:20:44,037 INFO {'debug': True, 'template_loader': <tornado.template.Loader object at 0x1e70450>, 'cookie_secret': 'your-cookie-secret', 'xsrf_cookies': True, 'static_path': '/home/tubone/chainer/japanese_talk_api/tornado/static'}
+2017-06-04 10:21:10,612 ERROR Uncaught exception GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF', version='HTTP/1.1', remote_ip='192.168.0.5', headers={'Accept-Language': 'ja', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.0.84:8787', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 31, in prediction
+    n_units = model.embed.W.shape[1]
+AttributeError: 'Variable' object has no attribute 'shape'
+2017-06-04 10:21:10,613 ERROR 500 GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5) 3.77ms
+2017-06-04 10:23:33,999 INFO [('/', <class 'top.TopHandler'>)]
+2017-06-04 10:23:33,999 INFO {'debug': True, 'template_loader': <tornado.template.Loader object at 0x235b450>, 'cookie_secret': 'your-cookie-secret', 'xsrf_cookies': True, 'static_path': '/home/tubone/chainer/japanese_talk_api/tornado/static'}
+2017-06-04 10:23:38,016 ERROR Uncaught exception GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF', version='HTTP/1.1', remote_ip='192.168.0.5', headers={'Accept-Language': 'ja', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.0.84:8787', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 53, in prediction
+    state, prob = model.predict(prev_char, state)
+AttributeError: 'CharRNN' object has no attribute 'predict'
+2017-06-04 10:23:38,018 ERROR 500 GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5) 3.86ms
+2017-06-04 10:23:39,085 ERROR Uncaught exception GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF', version='HTTP/1.1', remote_ip='192.168.0.5', headers={'Accept-Language': 'ja', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.0.84:8787', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 53, in prediction
+    state, prob = model.predict(prev_char, state)
+AttributeError: 'CharRNN' object has no attribute 'predict'
+2017-06-04 10:23:39,086 ERROR 500 GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5) 2.47ms
+2017-06-04 10:23:39,627 ERROR Uncaught exception GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF', version='HTTP/1.1', remote_ip='192.168.0.5', headers={'Accept-Language': 'ja', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.0.84:8787', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 53, in prediction
+    state, prob = model.predict(prev_char, state)
+AttributeError: 'CharRNN' object has no attribute 'predict'
+2017-06-04 10:23:39,628 ERROR 500 GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5) 2.37ms
+2017-06-04 10:23:40,235 ERROR Uncaught exception GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF', version='HTTP/1.1', remote_ip='192.168.0.5', headers={'Accept-Language': 'ja', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.0.84:8787', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 53, in prediction
+    state, prob = model.predict(prev_char, state)
+AttributeError: 'CharRNN' object has no attribute 'predict'
+2017-06-04 10:23:40,236 ERROR 500 GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5) 2.52ms
+2017-06-04 10:25:46,896 INFO [('/', <class 'top.TopHandler'>)]
+2017-06-04 10:25:46,896 INFO {'debug': True, 'template_loader': <tornado.template.Loader object at 0x21ee450>, 'cookie_secret': 'your-cookie-secret', 'xsrf_cookies': True, 'static_path': '/home/tubone/chainer/japanese_talk_api/tornado/static'}
+2017-06-04 10:25:50,469 ERROR Uncaught exception GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF', version='HTTP/1.1', remote_ip='192.168.0.5', headers={'Accept-Language': 'ja', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.0.84:8787', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 56, in prediction
+    state, prob = model.predict(prev_char, state)
+AttributeError: 'CharRNN' object has no attribute 'predict'
+2017-06-04 10:25:50,471 ERROR 500 GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5) 63.29ms
+2017-06-04 10:27:10,273 INFO [('/', <class 'top.TopHandler'>)]
+2017-06-04 10:27:10,273 INFO {'debug': True, 'template_loader': <tornado.template.Loader object at 0x15dd450>, 'cookie_secret': 'your-cookie-secret', 'xsrf_cookies': True, 'static_path': '/home/tubone/chainer/japanese_talk_api/tornado/static'}
+2017-06-04 10:27:18,902 ERROR Uncaught exception GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF', version='HTTP/1.1', remote_ip='192.168.0.5', headers={'Accept-Language': 'ja', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.0.84:8787', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 45, in get
+    output = output[len(query):].lstrip("?\n").lstrip("？\n").lstrip("??\n").lstrip("？？\n").lstrip().split("\n\n")[0]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xef in position 0: ordinal not in range(128)
+2017-06-04 10:27:18,904 ERROR 500 GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5) 5700.16ms
+2017-06-04 10:28:56,784 INFO [('/', <class 'top.TopHandler'>)]
+2017-06-04 10:28:56,785 INFO {'debug': True, 'template_loader': <tornado.template.Loader object at 0x2487450>, 'cookie_secret': 'your-cookie-secret', 'xsrf_cookies': True, 'static_path': '/home/tubone/chainer/japanese_talk_api/tornado/static'}
+2017-06-04 10:29:07,194 INFO 200 GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5) 6092.72ms
+2017-06-04 17:30:56,063 INFO [('/', <class 'top.TopHandler'>)]
+2017-06-04 17:30:56,063 INFO {'debug': True, 'template_loader': <tornado.template.Loader object at 0x173c3d0>, 'cookie_secret': 'your-cookie-secret', 'xsrf_cookies': True, 'static_path': '/home/tubone/chainer/japanese_talk_api/tornado/static'}
+2017-06-04 17:31:21,421 INFO 200 GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5) 14455.76ms
+2017-06-04 17:31:44,247 INFO 200 GET /?q=%E3%81%AF%E3%81%98%E3%82%81%E3%81%BE%E3%81%97%E3%81%A6 (192.168.0.5) 13928.22ms
+2017-06-04 17:44:16,811 INFO [('/', <class 'top.TopHandler'>)]
+2017-06-04 17:44:16,811 INFO {'debug': True, 'template_loader': <tornado.template.Loader object at 0x17763d0>, 'cookie_secret': 'your-cookie-secret', 'xsrf_cookies': True, 'static_path': '/home/tubone/chainer/japanese_talk_api/tornado/static'}
+2017-06-04 17:44:43,921 INFO 200 GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF (192.168.0.5) 14183.43ms
+2017-06-04 17:45:12,496 INFO [('/', <class 'top.TopHandler'>)]
+2017-06-04 17:45:12,497 INFO {'debug': True, 'template_loader': <tornado.template.Loader object at 0x24093d0>, 'cookie_secret': 'your-cookie-secret', 'xsrf_cookies': True, 'static_path': '/home/tubone/chainer/japanese_talk_api/tornado/static'}
+2017-06-04 17:47:36,287 ERROR Uncaught exception GET /?q=%40chieri%20%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF%EF%BC%9F (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%40chieri%20%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF%EF%BC%9F', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'@'
+2017-06-04 17:47:36,289 ERROR 500 GET /?q=%40chieri%20%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF%EF%BC%9F (192.168.0.194) 6.12ms
+2017-06-04 17:48:54,960 ERROR Uncaught exception GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF%EF%BC%9F (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF%EF%BC%9F', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\uff1f'
+2017-06-04 17:48:54,962 ERROR 500 GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF%EF%BC%9F (192.168.0.194) 137.14ms
+2017-06-04 17:48:59,601 ERROR Uncaught exception GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fsugasuga765%2Fstatus%2F871287568242843648%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fsugasuga765%2Fstatus%2F871287568242843648%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up.', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\u2019'
+2017-06-04 17:48:59,609 ERROR 500 GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fsugasuga765%2Fstatus%2F871287568242843648%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194) 380.23ms
+2017-06-04 17:49:32,778 ERROR Uncaught exception GET /?q=%E3%81%82%E3%81%82%EF%BC%9F (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%E3%81%82%E3%81%82%EF%BC%9F', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\uff1f'
+2017-06-04 17:49:32,779 ERROR 500 GET /?q=%E3%81%82%E3%81%82%EF%BC%9F (192.168.0.194) 47.84ms
+2017-06-04 17:49:38,355 ERROR Uncaught exception GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2FTAMA07103756%2Fstatus%2F871287730520547329%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2FTAMA07103756%2Fstatus%2F871287730520547329%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up.', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\u2019'
+2017-06-04 17:49:38,359 ERROR 500 GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2FTAMA07103756%2Fstatus%2F871287730520547329%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194) 329.65ms
+2017-06-04 17:50:25,412 INFO 200 GET /?q=%E3%81%8A%E3%83%BC%E3%81%84 (192.168.0.5) 12765.86ms
+2017-06-04 17:50:39,784 ERROR Uncaught exception GET /?q=%E3%81%98%E3%82%83%E3%81%82%E3%81%AA%EF%BC%81 (192.168.0.5)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%E3%81%98%E3%82%83%E3%81%82%E3%81%AA%EF%BC%81', version='HTTP/1.1', remote_ip='192.168.0.5', headers={'Accept-Language': 'ja', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.0.84:8787', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\uff01'
+2017-06-04 17:50:39,787 ERROR 500 GET /?q=%E3%81%98%E3%82%83%E3%81%82%E3%81%AA%EF%BC%81 (192.168.0.5) 101.42ms
+2017-06-04 17:50:54,945 ERROR Uncaught exception GET /?q=%22%E3%81%98%E3%82%83%E3%81%82%E3%81%AA%EF%BC%81%22 (192.168.0.5)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%22%E3%81%98%E3%82%83%E3%81%82%E3%81%AA%EF%BC%81%22', version='HTTP/1.1', remote_ip='192.168.0.5', headers={'Accept-Language': 'ja', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.0.84:8787', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'"'
+2017-06-04 17:50:54,946 ERROR 500 GET /?q=%22%E3%81%98%E3%82%83%E3%81%82%E3%81%AA%EF%BC%81%22 (192.168.0.5) 5.02ms
+2017-06-04 17:50:59,384 ERROR Uncaught exception GET /?q=%22%E3%81%98%E3%82%83%E3%81%82%E3%81%AA%EF%BC%81%22 (192.168.0.5)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%22%E3%81%98%E3%82%83%E3%81%82%E3%81%AA%EF%BC%81%22', version='HTTP/1.1', remote_ip='192.168.0.5', headers={'Accept-Language': 'ja', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.0.84:8787', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'"'
+2017-06-04 17:50:59,385 ERROR 500 GET /?q=%22%E3%81%98%E3%82%83%E3%81%82%E3%81%AA%EF%BC%81%22 (192.168.0.5) 4.73ms
+2017-06-04 17:51:03,014 ERROR Uncaught exception GET /?q=%22%E3%81%98%E3%82%83%E3%81%82%E3%81%AA%22 (192.168.0.5)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%22%E3%81%98%E3%82%83%E3%81%82%E3%81%AA%22', version='HTTP/1.1', remote_ip='192.168.0.5', headers={'Accept-Language': 'ja', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.0.84:8787', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'"'
+2017-06-04 17:51:03,016 ERROR 500 GET /?q=%22%E3%81%98%E3%82%83%E3%81%82%E3%81%AA%22 (192.168.0.5) 5.55ms
+2017-06-04 17:51:22,397 INFO 200 GET /?q=%E3%81%86%E3%82%93%E3%81%A1%E3%81%97%E3%81%A6 (192.168.0.5) 11152.69ms
+2017-06-04 17:52:19,492 ERROR Uncaught exception GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fasertmngo23%2Fstatus%2F871288401651154944%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fasertmngo23%2Fstatus%2F871288401651154944%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up.', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\u2019'
+2017-06-04 17:52:19,493 ERROR 500 GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fasertmngo23%2Fstatus%2F871288401651154944%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194) 318.22ms
+2017-06-04 17:56:43,346 INFO [('/', <class 'top.TopHandler'>)]
+2017-06-04 17:56:43,347 INFO {'debug': True, 'template_loader': <tornado.template.Loader object at 0xbfe3d0>, 'cookie_secret': 'your-cookie-secret', 'xsrf_cookies': True, 'static_path': '/home/tubone/chainer/japanese_talk_api/tornado/static'}
+2017-06-04 17:57:05,567 INFO 200 GET /?q=%E3%81%86%E3%82%93%E3%81%A1%E3%81%97%E3%81%A6 (192.168.0.5) 12755.54ms
+2017-06-04 17:57:56,461 ERROR Uncaught exception GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Faritaku03%2Fstatus%2F871289820286287872%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Faritaku03%2Fstatus%2F871289820286287872%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up.', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\u2019'
+2017-06-04 17:57:56,466 ERROR 500 GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Faritaku03%2Fstatus%2F871289820286287872%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194) 367.34ms
+2017-06-04 17:57:57,268 ERROR Uncaught exception GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2FNegaa0125%2Fstatus%2F871289821976592384%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2FNegaa0125%2Fstatus%2F871289821976592384%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up.', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\u2019'
+2017-06-04 17:57:57,269 ERROR 500 GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2FNegaa0125%2Fstatus%2F871289821976592384%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194) 348.87ms
+2017-06-04 17:58:59,507 INFO 200 GET /?q=Hello (192.168.0.5) 11427.54ms
+2017-06-04 17:59:24,827 ERROR Uncaught exception GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fkanadesann3%2Fstatus%2F871290192581111808%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fkanadesann3%2Fstatus%2F871290192581111808%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up.', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\u2019'
+2017-06-04 17:59:24,830 ERROR 500 GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fkanadesann3%2Fstatus%2F871290192581111808%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194) 368.84ms
+2017-06-04 17:59:27,590 ERROR Uncaught exception GET /?q=%E3%81%98%E3%82%83%E3%81%82%E3%81%AA%EF%BC%81 (192.168.0.5)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%E3%81%98%E3%82%83%E3%81%82%E3%81%AA%EF%BC%81', version='HTTP/1.1', remote_ip='192.168.0.5', headers={'Accept-Language': 'ja', 'Accept-Encoding': 'gzip, deflate', 'Host': '192.168.0.84:8787', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36', 'Dnt': '1', 'Connection': 'keep-alive', 'Upgrade-Insecure-Requests': '1'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\uff01'
+2017-06-04 17:59:27,591 ERROR 500 GET /?q=%E3%81%98%E3%82%83%E3%81%82%E3%81%AA%EF%BC%81 (192.168.0.5) 59.25ms
+2017-06-04 17:59:45,587 INFO 200 GET /?q=%E3%81%98%E3%82%83%E3%81%82%E3%81%AA (192.168.0.5) 13711.20ms
+2017-06-04 18:00:51,796 INFO [('/', <class 'top.TopHandler'>)]
+2017-06-04 18:00:51,797 INFO {'debug': True, 'template_loader': <tornado.template.Loader object at 0x11a43d0>, 'cookie_secret': 'your-cookie-secret', 'xsrf_cookies': True, 'static_path': '/home/tubone/chainer/japanese_talk_api/tornado/static'}
+2017-06-04 18:02:56,642 INFO 200 GET /?q=%E3%81%8A%E3%81%84 (192.168.0.194) 10909.38ms
+2017-06-04 18:03:17,970 ERROR Uncaught exception GET /?q=%E3%81%8D%E3%82%87%E3%81%86%E3%81%AE%E5%A4%A9%E6%B0%97%E3%81%AF%EF%BC%9F (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%E3%81%8D%E3%82%87%E3%81%86%E3%81%AE%E5%A4%A9%E6%B0%97%E3%81%AF%EF%BC%9F', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\uff1f'
+2017-06-04 18:03:17,975 ERROR 500 GET /?q=%E3%81%8D%E3%82%87%E3%81%86%E3%81%AE%E5%A4%A9%E6%B0%97%E3%81%AF%EF%BC%9F (192.168.0.194) 247.98ms
+2017-06-04 18:03:34,234 ERROR Uncaught exception GET /?q=%E4%BB%8A%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC%E3%81%AE%E5%A4%A9%E6%B0%97%E3%81%AF%EF%BC%9F (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=%E4%BB%8A%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC%E3%81%AE%E5%A4%A9%E6%B0%97%E3%81%AF%EF%BC%9F', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\uff1f'
+2017-06-04 18:03:34,236 ERROR 500 GET /?q=%E4%BB%8A%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC%E3%81%AE%E5%A4%A9%E6%B0%97%E3%81%AF%EF%BC%9F (192.168.0.194) 222.77ms
+2017-06-04 18:03:38,327 ERROR Uncaught exception GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2FGingaLegend%2Fstatus%2F871291260371320833%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2FGingaLegend%2Fstatus%2F871291260371320833%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up.', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\u2019'
+2017-06-04 18:03:38,328 ERROR 500 GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2FGingaLegend%2Fstatus%2F871291260371320833%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194) 279.16ms
+2017-06-04 18:04:10,355 INFO 200 GET /?q=%E6%9A%91%E3%81%84%E3%81%AD (192.168.0.194) 12551.88ms
+2017-06-04 18:51:12,427 INFO [('/', <class 'top.TopHandler'>)]
+2017-06-04 18:51:12,428 INFO {'debug': True, 'template_loader': <tornado.template.Loader object at 0x194a3d0>, 'cookie_secret': 'your-cookie-secret', 'xsrf_cookies': True, 'static_path': '/home/tubone/chainer/japanese_talk_api/tornado/static'}
+2017-06-04 18:51:21,302 ERROR Uncaught exception GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fanpanian0327%2Fstatus%2F871303265064845312%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fanpanian0327%2Fstatus%2F871303265064845312%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up.', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\u2019'
+2017-06-04 18:51:21,307 ERROR 500 GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fanpanian0327%2Fstatus%2F871303265064845312%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194) 358.91ms
+2017-06-04 18:51:37,770 ERROR Uncaught exception GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2F4non_cn%2Fstatus%2F871303333746585600%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2F4non_cn%2Fstatus%2F871303333746585600%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up.', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\u2019'
+2017-06-04 18:51:37,771 ERROR 500 GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2F4non_cn%2Fstatus%2F871303333746585600%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194) 224.34ms
+2017-06-04 18:51:50,494 INFO 200 GET /?q=%E3%81%93%E3%82%93%E3%81%AB%E3%81%A1%E3%81%AF%E3%83%BC (192.168.0.194) 11491.16ms
+2017-06-04 18:51:50,802 ERROR Uncaught exception GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20https%3A%2F%2Ftwitter.com%2Fani_generation%2Fstatus%2F870501839896051712%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20https%3A%2F%2Ftwitter.com%2Fani_generation%2Fstatus%2F870501839896051712%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up.', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\u2019'
+2017-06-04 18:51:50,804 ERROR 500 GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20https%3A%2F%2Ftwitter.com%2Fani_generation%2Fstatus%2F870501839896051712%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194) 308.09ms
+2017-06-04 18:52:17,098 INFO 200 GET /?q=%E5%A5%BD%E3%81%8D (192.168.0.194) 12538.36ms
+2017-06-04 18:52:17,412 ERROR Uncaught exception GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Ftayuno06%2Fstatus%2F871303468467666944%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Ftayuno06%2Fstatus%2F871303468467666944%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up.', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\u2019'
+2017-06-04 18:52:17,414 ERROR 500 GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Ftayuno06%2Fstatus%2F871303468467666944%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194) 313.95ms
+2017-06-04 18:52:39,646 INFO 200 GET /?q=%E5%A5%BD%E3%81%8D%E3%81%AA%E3%81%9F%E3%81%B9%E3%82%82%E3%81%AE%E3%81%AF (192.168.0.194) 12800.54ms
+2017-06-04 18:52:39,993 ERROR Uncaught exception GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fglulug%2Fstatus%2F871303582951260161%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fglulug%2Fstatus%2F871303582951260161%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up.', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\u2019'
+2017-06-04 18:52:39,996 ERROR 500 GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fglulug%2Fstatus%2F871303582951260161%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194) 346.77ms
+2017-06-04 18:52:40,307 ERROR Uncaught exception GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fjudo_ja%2Fstatus%2F871303586151624704%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fjudo_ja%2Fstatus%2F871303586151624704%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up.', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\u2019'
+2017-06-04 18:52:40,309 ERROR 500 GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fjudo_ja%2Fstatus%2F871303586151624704%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194) 311.96ms
+2017-06-04 20:14:12,543 INFO [('/', <class 'top.TopHandler'>)]
+2017-06-04 20:14:12,543 INFO {'debug': True, 'template_loader': <tornado.template.Loader object at 0x1759410>, 'cookie_secret': 'your-cookie-secret', 'xsrf_cookies': True, 'static_path': '/home/tubone/chainer/japanese_talk_api/tornado/static'}
+2017-06-04 20:14:41,507 INFO 200 GET /?q=%E3%81%8A%E3%81%AF%E3%82%88%E3%81%86 (192.168.0.194) 14261.92ms
+2017-06-04 20:15:12,238 INFO 200 GET /?q=%E4%BC%9A%E7%A4%BE%E8%A1%8C%E3%81%8D%E3%81%9F%E3%81%8F%E3%81%AA%E3%81%84%E3%82%88%E3%83%BC (192.168.0.194) 11329.26ms
+2017-06-04 20:15:12,527 ERROR Uncaught exception GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fmiduki_uta_love%2Fstatus%2F871324365190701056%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194)
+HTTPServerRequest(protocol='http', host='192.168.0.84:8787', method='GET', uri='/?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fmiduki_uta_love%2Fstatus%2F871324365190701056%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up.', version='HTTP/1.1', remote_ip='192.168.0.194', headers={'Host': '192.168.0.84:8787', 'Content-Length': '0', 'Connection': 'close', 'User-Agent': 'Hubot/2.19.0'})
+Traceback (most recent call last):
+  File "/home/tubone/chainer/my_env2.7/lib/python2.7/site-packages/tornado/web.py", line 1509, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/handlers/top.py", line 43, in get
+    output = prediction(args, vocab=self.VOCAB, model=self.MODEL)
+  File "/home/tubone/chainer/japanese_talk_api/tornado/scripts/prediction.py", line 49, in prediction
+    prev_char = np.ones((1,), dtype=np.int32) * vocab[i]
+KeyError: u'\u2019'
+2017-06-04 20:15:12,532 ERROR 500 GET /?q=Pssst!%20I%20didn%E2%80%99t%20unfurl%20http%3A%2F%2Ftwitter.com%2Fmiduki_uta_love%2Fstatus%2F871324365190701056%20because%20it%20was%20already%20shared%20in%20this%20channel%20quite%20recently%20(within%20the%20last%20hour)%20and%20I%20didn%E2%80%99t%20want%20to%20clutter%20things%20up. (192.168.0.194) 290.51ms
